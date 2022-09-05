@@ -1,1 +1,1 @@
-# quinn-example
+# Quinn example

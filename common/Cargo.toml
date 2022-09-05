@@ -1,0 +1,9 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+quinn = { version = "0.8.5", features= ["tls-rustls"] }
+rustls = { version = "0.20.3", features = ["quic"]}
+rcgen = "0.9.3"

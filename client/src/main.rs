@@ -14,7 +14,7 @@ use rustls;
 use tracing::{error, info};
 use url::Url;
 
-use quinn_example::common;
+use common;
 
 /// HTTP/0.9 over QUIC client
 #[derive(Parser, Debug)]

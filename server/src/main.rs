@@ -9,9 +9,10 @@ use std::{
 use anyhow::{anyhow, bail, Context, Result};
 use clap::Parser;
 use futures::StreamExt;
-use quinn_example::common;
 use tracing::{error, info, info_span};
 use tracing_futures::Instrument as _;
+
+use common;
 
 #[derive(Parser, Debug)]
 #[clap(name = "server")]

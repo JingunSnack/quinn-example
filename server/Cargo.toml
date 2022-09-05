@@ -1,0 +1,19 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+common = { path = "../common" }
+anyhow = "1.0.63"
+quinn = { version = "0.8.5", features= ["tls-rustls"] }
+clap = { version = "3.2", features = ["derive"] }
+tokio = { version = "1.0.1", features = ["rt", "rt-multi-thread", "time", "macros", "sync"] }
+rustls = { version = "0.20.3", features = ["quic"]}
+tracing = "0.1.10"
+tracing-subscriber = { version = "0.3.0", default-features = false, features = ["env-filter", "fmt", "ansi", "time", "local-time"] }
+tracing-futures = { version = "0.2.0", default-features = false, features = ["std-future"] }
+directories-next = "2.0.0"
+rcgen = "0.9.3"
+rustls-pemfile = "1.0.1"
+futures = "0.3.24"
